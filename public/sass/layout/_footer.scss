@@ -1,0 +1,108 @@
+
+.footer-container {
+    background: #333;
+    color: #f0ebd8;
+    padding: 2em 0.5em;
+    text-align: center;
+    h1 {
+        cursor: default;
+        text-align: end;
+    }
+
+    
+    &__mas-de-nosotros{ 
+        text-align: center;
+        width: 33.3%;
+    }
+    &__mas-de-nosotros p{ 
+        padding-right: 2.5em;
+        padding-left: 2.5em;
+    }
+
+    &__redes-sociales {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        width: 33.3%;
+        a:hover {
+            color: #F66F58;
+        }
+        li {
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 1.5em;
+        }
+        
+        
+        
+    }
+    
+    &__informacion-de-contacto {
+        text-align: center;
+        width: 33.3%;
+    }
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    &__img {
+        width: 5%;
+    }
+}
+
+.footer-redes{
+    color: #f0ebd8;
+    text-decoration: none;
+    list-style: none;
+    
+    span {
+        font-size: 25px;
+    }
+
+
+
+}
+
+
+
+
+
+.section-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+
+}
+
+.section-footer  h1 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer-container  hr {
+    margin: 12px;
+}
+
+@media (max-width: 620px) {
+    .section-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-footer hr {
+        width: 80%;
+    }
+    .section-footer p {
+        font-size: 12px;
+    }
+    .section-footer h1 {
+        font-size: 17px;
+        margin-top: 1.2em;
+    }
+}

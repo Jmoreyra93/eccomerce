@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?syxty');
+  src:  url('fonts/icomoon.eot?syxty#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?syxty') format('truetype'),
+    url('fonts/icomoon.woff?syxty') format('woff'),
+    url('fonts/icomoon.svg?syxty#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-address-book:before {
+  content: "\e944";
+}
+.icon-undo2:before {
+  content: "\e967";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-accessibility:before {
+  content: "\e9b2";
+}
+.icon-menu-icono:before {
+  content: "\e9bd";
+}
+.icon-upload3:before {
+  content: "\e9c8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}

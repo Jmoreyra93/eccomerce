@@ -1,0 +1,62 @@
+<header class="header-cards">
+    <h1 class="cards-titulo" id="titulo-alta">Da de alta ,borra y/o actualiza tu producto</h1>
+</header>
+<div id="producto-agregado-borrado-actualizado" class="producto-agregado-borrado-actualizado"></div>
+<div class="container-alta">
+    <form action="formulario.php" class="formulario" method="POST">
+        <fieldset class="formulario__fieldset">
+            <legend class="formulario__legend"><span class="formulario__legend-span"></span> Alta del producto</legend>
+
+        <!-- Campo de nombre -->
+                <label for="nombre">Nombre</label>
+                <input class="formulario__input-nombre" id="nombre" type="text">
+                <div class="formulario__campo-obligatorio"></div>
+
+                <!-- Campo de precio -->
+                <label for="precio">Precio</label>
+                <input class="formulario__input-nombre" id="precio" type="text">
+                <div></div>
+
+                <!-- Campo de stock -->
+                <label for="stock">Stock</label>
+                <input class="formulario__input-nombre"  id="stock" type="text">
+                <div></div>
+
+                <!-- Campo de marca -->
+                <label for="marca">Marca</label>
+                <input class="formulario__input-nombre"   id="marca" type="text">
+                <div></div>
+
+                <!-- Campo de categoria -->
+                <label for="categoria">Categoria</label>
+                <input class="formulario__input-nombre"  id="categoria" type="text">
+                <div></div>
+
+                <!-- Campo de detalles -->
+                <label for="detalles">Detalles</label>
+                <input class="formulario__input-nombre"  id="detalles" type="text">
+                <div></div>
+
+                <!-- Campo de foto -->
+                <label for="foto">Foto</label>
+                <input class="formulario__input-nombre"  id="foto" type="text">
+                <div></div>
+
+                <!-- Campo de envio -->
+                <label id="formulario__envio" for="envio">Envio</label>
+                <input class="formulario__envio" id="envio" type="checkbox">
+                <div></div>
+
+                <br><br>
+                <hr>
+        </fieldset>    
+        <button id="boton-agregarAlta">Agregar</button>
+    </form>
+    <div class="container-alta__handlebars">
+
+    <div id="listado-productos"></div>
+    </div>
+    <br><br>
+
+</div>
+

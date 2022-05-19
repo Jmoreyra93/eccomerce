@@ -1,0 +1,26 @@
+@import 'abstracts/variables';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/card';
+@import 'components/carrito';
+@import 'components/_container-medios';
+@import 'components/_container-destacados';
+@import 'components/buttons';
+@import 'components/slideshow.scss';
+@import 'components/slideDos.scss';
+@import 'components/inicio.scss';
+
+
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/index';
+@import 'pages/nosotros';
+@import 'pages/contacto';
+@import 'pages/alta';
+
+

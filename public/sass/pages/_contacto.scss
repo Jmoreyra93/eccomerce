@@ -1,0 +1,32 @@
+.formulario-titulo {
+    color: #FFF;
+    background: rgba(51, 51, 51, 0.925);
+    padding: 4px 20px;
+    font-size: 58px;
+    line-height: 1.2;
+}
+
+.main-contacto {
+    background-color: #e1e4e5;
+
+} 
+
+.formulario__contacto {
+    padding-top: 4.5em;
+}
+.container_contacto {
+    display: flex;
+}
+.formulario_contacto_inframe {
+    margin-right: 2em;
+}
+@media (max-width: 768px) {
+    #formulario-contacto {
+        margin: 0 10px;
+    }
+}
+@media (max-width: 1070px) {
+    .formulario_contacto_inframe {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,108 @@
+.volver-inicio {
+    cursor: pointer;
+    text-decoration: none;
+    color: aqua;
+    
+
+}
+.volver-inicio a{
+    text-decoration: none;
+    color: lightblue;
+}
+.volver-inicio p{
+    text-decoration: none;
+    color: #e1e4e5;
+}
+.buttom-volver {
+    background-color: #e1e4e5;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.3em;
+
+}
+.buttom-volver p{
+    text-decoration: none;
+    color: #e1e4e5;
+
+
+
+}
+
+button {
+    background-color: #59BFF6;
+    border-radius: 10px;
+    border: solid #e1e4e5 1px;
+    padding: 1.2em;
+    cursor: pointer;
+
+
+}
+
+#boton-buscar {
+    border-top: 2.5px solid #59BFF6;
+    border-right: 2.5px solid #59BFF6;
+    border-bottom: 2.5px solid #59BFF6;
+    border-left: 2.5px solid #fff;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 15px;
+
+    color: #59BFF6;
+
+}
+
+#boton-buscar:hover {
+    color: #F66F58;
+}
+
+#boton-carrito {
+    background-color: #59BFF6;
+    width: 60px;
+    font-size: 15px;
+    color: #fff;
+    height: 49px;
+}
+
+#boton-carrito:hover {
+    background-color: #F66F58;
+
+}
+
+
+
+#boton-fav {
+    background-color: #fff;
+    color: yellowgreen;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+
+}
+#boton-fav:hover {
+    background-color: #59BFF6;
+    color: #fff;
+    border: none;
+}
+
+#boton-mas , #boton-menos , #boton-carr {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+    font-weight: bolder;
+    
+}
+#boton-mas:hover , #boton-menos:hover{
+    background-color: #F66F58;
+    
+}
+#boton-carr:hover {
+    background-color: yellowgreen;
+}
+
+button:hover {
+    background-color: #F66F58;
+    color: #e1e4e5;
+    border: #F66F58;
+}

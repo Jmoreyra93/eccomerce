@@ -1,0 +1,35 @@
+{{#if listado.length }}
+    {{#each listado}}
+    <a href="" class="card" onclick="agregarCarrito(event,'{{_id}}',this)">
+        <article class="card__article">
+            <div class="card__image" style="background-image: url('{{foto}}')">
+
+            </div>
+
+            <div class="card__content">
+                <h3 class="card__heading">{{nombre}}</h3>
+                <div class="card__description">
+                    <p>{{detalles}}</p>
+                </div>
+                <div class="card__precio">
+                    <p>Envio gratis</p>
+                    <p>$ {{precio}}-.</p>
+                    <p>Cuotas sin interes <sup>(*)</sup></p>
+                </div>
+                <div class="card__boton-mas-menos">
+                    <button id="boton-carr"><span class="icon-cart"></span></button>
+                </div>
+                <div class="card__stock">
+                    <p>stock{{stock}}</p>
+                </div>
+                {{!-- <div class="card__fav-megusta">
+                    <button id="boton-fav"><span class="icon-star-full"></span></button>
+                </div> --}}
+
+            </div>
+        </article>
+    </a>
+    {{/each}}
+{{else}}
+    <h2>No se encontraron productos</h2>
+{{/if}}

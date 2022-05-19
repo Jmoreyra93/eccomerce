@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecticus</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="icons/style.css">
+    <link rel="stylesheet" href="icons-footer/style.css">
+</head>
+<body>
+    <header class="main-header">
+
+        <input type="checkbox" id="menu">
+        <!-- <div class="logo-container">
+            <img src="img/logos/ConnecticuS.png" alt="">
+        </div> -->
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+
+                <li class="nav-bar__logo">
+                    <img id="logo" src="img/logos/ConnecticuS.png" alt="">
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="inicio" ><span class="icon-home3"></span> Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="alta" ><span class="icon-upload3"></span> Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="contacto" ><span class="icon-address-book"></span>
+                        Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="" id="nosotros" ><span class="icon-accessibility"></span>
+                        Nosotros</a>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <form class="search-bar__form-container">
+                <input class="search-bar__form-search" id="busqueda" type="search"
+                    placeholder="Buscar su producto aquí...">
+                <button id="boton-buscar" type="submit"><span class="icon-search"></span></button>
+            </form>
+            <div class="search-bar__carrito-container">
+                <button id="boton-carrito"><span class="icon-cart"></span></button>
+            </div>
+
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+
+    </header>
+
+    
+    <!-- <section class="section-cart" id="section-cart"></section> -->
+
+
+    <div class="section-carrito"></div>
+    
+    <main>
+
+
+    </main>
+
+    <footer class="footer-container">
+        <section class="section-footer">
+            <div class="footer-container__mas-de-nosotros">
+                <h1 class="footer-header">
+                    Mas de nosotros
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti</p>
+            </div>
+            <hr>
+            <div class="footer-container__informacion-de-contacto">
+                <h1>Informacion de Contacto</h1>
+                <p>Av. 12 de Octubre y Gran Canaria</p>
+                <p>Quilmes</p>
+                <p>Buenos Aires - Argentina -</p>
+                <p>Tel: 4349-1700</p>
+                <p>www.connecticus</p>
+            </div>
+            <hr>
+            <div class="footer-container__redes-sociales">
+                <h1>Seguinos en redes</h1>
+                <ul>
+                    <li> 
+                        <a class="footer-redes" href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-redes" href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-redes" href="https://www.google.com/" target="_blank"><span class="icon-google3"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-redes" href="https://www.twitter.com/" target="_blank"><span class="icon-twitter"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <div class="footer-logo">
+            <img class="footer-logo__img" src="logo.png" alt="">
+        </div>
+        <div class="footer-container__derechos-terminos">
+            2021 Todos los derechos reservados. &copy;
+        </div>
+    </footer>
+
+
+
+
+    <!-- Código de librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+
+    <!-- clientes http -->
+    <script src="js/clientes/http.client.js"></script>
+
+    <!-- servicios -->
+    <script src="js/servicios/producto.js"></script>
+    <script src="js/servicios/carrito.js"></script>
+
+    <!-- modelos -->
+    <script src="js/modelos/producto.js"></script>
+    <script src="js/modelos/carrito.js"></script>
+
+    <!-- controladores -->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
+
+    <!-- menúes -->
+    <script src="js/menu/alta.js"></script>
+    <script src="js/menu/nosotros.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/inicio.js"></script>
+    <script src="js/menu/carrito.js"></script>
+    <script src="js/menu/slideshow.js"></script>
+
+    <!-- Código de arranque -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
