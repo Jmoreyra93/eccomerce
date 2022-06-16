@@ -19,14 +19,15 @@ class ProductoController extends ProductoModel {
         renderTablaAlta(null, this.productos)
         
         setTimeout(function(){
-            let botonAgregar = document.getElementById('producto-agregado-borrado-actualizado')
+            let botonAgregar = document.getElementById('contenedorMensaje')
+            let mensajeAgregar = document.getElementById('producto-agregado-borrado-actualizado')
         
-            botonAgregar.style.display = 'flex'
-            botonAgregar.innerHTML = 'Se agregó correctamente'
+            botonAgregar.style.visibility = 'visible'
+            mensajeAgregar.innerHTML = `<p> Se guardó :<br> <strong>${productoGuardado.nombre}</strong> satifactoriamente</p>` 
             setTimeout(function(){
-                botonAgregar.style.display = 'none'
+                botonAgregar.style.visibility = 'hidden'
             }, 2000);
-        }, 2000);
+        }, 1000);
 
     }
 
@@ -45,14 +46,15 @@ class ProductoController extends ProductoModel {
         renderTablaAlta(null, this.productos)
 
         setTimeout(function(){
-            let botonActualizar = document.getElementById('producto-agregado-borrado-actualizado')
+            let botonAgregar = document.getElementById('contenedorMensaje')
+            let mensajeAgregar = document.getElementById('producto-agregado-borrado-actualizado')
         
-            botonActualizar.style.display = 'flex'
-            botonActualizar.innerHTML = 'Se actualizó correctamente'
+            botonAgregar.style.visibility = 'visible'
+            mensajeAgregar.innerHTML = `<p> Se actualizó :<br> <strong>${productoActualizado.nombre}</strong> satifactoriamente</p>` 
             setTimeout(function(){
-                botonActualizar.style.display = 'none'
+                botonAgregar.style.visibility = 'hidden'
             }, 2000);
-        }, 2000);
+        }, 1000);
 
         
 
@@ -64,7 +66,7 @@ class ProductoController extends ProductoModel {
 
         let productoBorrado = await productoService.borrarProductoService(id)
         
-        let index = this.productos.findIndex(producto => producto._id == productoBorrado._id)
+        let index = this.productos.findIndex(producto => producto.id == productoBorrado.id)
         this.productos.splice(index,1)
 
         renderTablaAlta(null, this.productos)
@@ -72,12 +74,13 @@ class ProductoController extends ProductoModel {
         
 
         setTimeout(function(){
-            let botonBorrar = document.getElementById('producto-agregado-borrado-actualizado')
+            let botonAgregar = document.getElementById('contenedorMensaje')
+            let mensajeAgregar = document.getElementById('producto-agregado-borrado-actualizado')
         
-            botonBorrar.style.display = 'flex'
-            botonBorrar.innerHTML = 'Se borró correctamente'
+            botonAgregar.style.visibility = 'visible'
+            mensajeAgregar.innerHTML = `<p> Se borró :<br> <strong>${productoBorrado.nombre}</strong> satifactoriamente</p>` 
             setTimeout(function(){
-                botonBorrar.style.display = 'none'
+                botonAgregar.style.visibility = 'hidden'
             }, 2000);
         }, 1000);
 

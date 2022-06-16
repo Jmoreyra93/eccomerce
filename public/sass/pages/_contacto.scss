@@ -6,16 +6,18 @@
     line-height: 1.2;
 }
 
-.main-contacto {
-    background-color: #e1e4e5;
 
-} 
 
 .formulario__contacto {
-    padding-top: 4.5em;
+    background-color: #59BFF6;
+    margin-top: 2em;
+}
+#formulario-contacto {
+    margin: 1em 1em ;
 }
 .container_contacto {
     display: flex;
+    justify-content: space-around;
 }
 .formulario_contacto_inframe {
     margin-right: 2em;

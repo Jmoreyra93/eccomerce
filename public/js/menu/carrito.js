@@ -15,7 +15,7 @@ async function renderTablaCarrito(carrito) {
 function initCarrito() {
     var btnCarrito = document.getElementById('boton-carrito')
     var elemSectionCarrito = document.getElementsByClassName('section-carrito')[0]
-
+    
     btnCarrito.addEventListener('click', async function () {
         mostrarCarrito = !mostrarCarrito
         if(mostrarCarrito) {
@@ -25,6 +25,15 @@ function initCarrito() {
             elemSectionCarrito.classList.remove('section-carrito--open')
         }
     })
+
 }
+
+function cerrarCarrito() {
+    var elemSectionCarrito = document.getElementsByClassName('section-carrito')[0]
+    elemSectionCarrito.classList.remove('section-carrito--open')
+}
+
+
+
 
 initCarrito()

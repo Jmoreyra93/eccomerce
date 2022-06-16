@@ -1,60 +1,71 @@
 <header class="header-cards">
-    <h1 class="cards-titulo" id="titulo-alta">Da de alta ,borra y/o actualiza tu producto</h1>
+    <h1 class="cards-titulo" id="titulo-alta">Sube actualiza y/o borra producto/s</h1>
 </header>
-<div id="producto-agregado-borrado-actualizado" class="producto-agregado-borrado-actualizado"></div>
-<div class="container-alta">
-    <form action="formulario.php" class="formulario" method="POST">
-        <fieldset class="formulario__fieldset">
-            <legend class="formulario__legend"><span class="formulario__legend-span"></span> Alta del producto</legend>
 
+<div class="contenedor-mensaje" id="contenedorMensaje">
+
+    <div id="producto-agregado-borrado-actualizado" class="producto-agregado-borrado-actualizado"></div>
+
+</div>
+
+<div class="container-alta">
+    <form action="formulario.php" class="formulario" method="POST" autocomplete="off">
         <!-- Campo de nombre -->
                 <label for="nombre">Nombre</label>
-                <input class="formulario__input-nombre" id="nombre" type="text">
-                <div class="formulario__campo-obligatorio"></div>
+                <input class="formulario__input-nombre data-validation" id="nombre" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de precio -->
                 <label for="precio">Precio</label>
-                <input class="formulario__input-nombre" id="precio" type="text">
-                <div></div>
+                <input class="formulario__input-nombre data-validation" id="precio" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de stock -->
                 <label for="stock">Stock</label>
-                <input class="formulario__input-nombre"  id="stock" type="text">
-                <div></div>
+                <input class="formulario__input-nombre data-validation"  id="stock" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de marca -->
                 <label for="marca">Marca</label>
-                <input class="formulario__input-nombre"   id="marca" type="text">
-                <div></div>
+                <input class="formulario__input-nombre data-validation"   id="marca" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de categoria -->
                 <label for="categoria">Categoria</label>
-                <input class="formulario__input-nombre"  id="categoria" type="text">
-                <div></div>
+                <input class="formulario__input-nombre data-validation"  id="categoria" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de detalles -->
                 <label for="detalles">Detalles</label>
-                <input class="formulario__input-nombre"  id="detalles" type="text">
-                <div></div>
+                <input class="formulario__input-nombre data-validation"  id="detalles" type="text">
+                <div class="msg-validation"></div>
 
                 <!-- Campo de foto -->
-                <label for="foto">Foto</label>
-                <input class="formulario__input-nombre"  id="foto" type="text">
-                <div></div>
+                <div id="drop-area">
+                    <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>Drag and Drop</b> dentro del área punteada</p>
+                    <br>
+        
+                    <input id="foto" type="file" accept="image/*">
+                    <label class="button" for="foto">file dialog</label>
+                    <br><br>
+        
+                    <progress id="progress-bar" max="100" value="0"></progress>
+                    <div id="gallery"><img width="100" src="" alt=""></div>
+                </div>
 
                 <!-- Campo de envio -->
                 <label id="formulario__envio" for="envio">Envio</label>
-                <input class="formulario__envio" id="envio" type="checkbox">
-                <div></div>
+                <input class="formulario__envio data-validation" id="envio" type="checkbox">
 
                 <br><br>
                 <hr>
-        </fieldset>    
         <button id="boton-agregarAlta">Agregar</button>
     </form>
+    
     <div class="container-alta__handlebars">
 
-    <div id="listado-productos"></div>
+        <div id="listado-productos"></div>
+
     </div>
     <br><br>
 

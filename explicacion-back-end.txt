@@ -1,0 +1,82 @@
+***********************************************
+*		                                  *
+*			server.js                   *
+*                                             *
+***********************************************
+
+Se creo un proyecto de servidor basada en la plataforma nodeJS(entorno de javaScript fuera del navegador)
+
+-Punto de entrada, mototr de arranque. Se ejecuta serie de instrucciones para arracar el servidor. Punto base donde recibe importaciones de una estructura MVC
+
+
+1# Se importo express es un marco de servidor, capas de crear capas de servicio para entender las solicitudes del cliente. Pueden ser intercaladas entre las recepciones de solicitudes y mensajes del cliente. Es un middlware
+
+2# const app -> creo las capas de proceso con app.use
+
+urlencoded, json -> me permiten decodificar los datos que vienen por request post,put
+
+
+
+***********************************************
+*		                                  *
+*			package.json                *
+*                                             *
+***********************************************
+
+scripts:(corren por npm)
+
+start -> "node server.js" -> motor de aranque 
+watch -> "nodemon server.js" -> dependencia que nos permite ejecutar node, escuchando el servidor y hacer los cambios.
+ 
+***********************************************
+*		                                  *
+*			ROUTER                      *
+*                                             *
+***********************************************
+
+es un objeto que se implementa dentro del servidor expres. y me crear lasrutas y lo exporto a server
+
+
+
+***********************************************
+*		                                  *
+*			MODELO MVC                  *
+*                                             *
+***********************************************
+desacoplamiento de capas
+3 PARTES(de parte del servidor) :
+
+MODELO->Objeto que sabe interactuar con la base de datos
+
+VISTA -> CAPA DE RUTEO (capa de presentación de las rutas) input - output de las rutas. EL servidor escucha las rutas.
+
+CONTROLADOR -> es un concepto que está interfaceando la vista con el modelo, no significa que este en una carpeta.
+	controller: bajo nivel del controlador. Parte tecnica del controlador. Puede accerder a la parte del cliente que demanda y puede acceder al objeto que puedo responder. Está usado por el router.  
+	api : es alto nivel del controlador 
+
+
+***********************************************
+*		                                  *
+*			API                         *
+*                                             *
+***********************************************
+
+RECIBE UN PRODCUTO
+INTERACTUA CON EL MODELO
+EL MODELO RESPONDE
+RESPONDE AL CONTROLADOR DE BAJO NIVEL QUE SABE RESPONDER AL CLIENTE
+
+
+***********************************************
+*		                                  *
+*			MODEL                       *
+*                                             *
+***********************************************
+
+PRINCIPIO SOLID -> CERRADO PARA LA MODIFICACIÓN Y ABIERTO PARA LA EXPANCIÓN
+
+
+
+
+
+

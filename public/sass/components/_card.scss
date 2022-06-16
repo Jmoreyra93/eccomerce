@@ -1,9 +1,8 @@
 .card {
-    background-color: #fff;
-    outline: none;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
     flex-grow: 1;
     width: 240px;
-    // max-width: 280px;
+    max-width: 240px;
     height: 420px;
     overflow: hidden;
     display: block;
@@ -23,19 +22,48 @@
     &:focus {
         box-shadow: 0 8px 11px 1px rgb(0 0 0 / 10%), 0 3px 14px 2px rgb(0 0 0 / 10%), 0 2px 0 -3px rgb(0 0 0 / 10%);
         z-index: 2;
+        transition: all .5s ease;
+
+    
+        
     }
+    
+    &__boton-mas-menos {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        transition: 3000ms all ease;
+        margin-top: .5em ;
+    }
+    &:hover &__boton-mas-menos {
+        
+    }
+    // &:hover &__image {
+    //     opacity: .7;
+    //     z-index: 4;
+    // }
+
+
+
+
+
+
     
     &__description {
         font-size: 12px;
     }
     &__heading {
+        margin-top: .5em;
         font-size: 16px;
+        font-family: 'Anton', sans-serif;
+
     }
 
 
     &__image {
         background-size: cover;
-        height: 220px;
+        height: 244px;
         background-position: center;
         transition: all 0.2s;
     }
@@ -43,11 +71,10 @@
     &:hover &__image {
         transform: scale(1.1) rotate(0deg);
         transition-delay: 0s;
+
     }
 
-    &__article {
-        
-    }
+
 
     &__content {
         position: absolute;
@@ -69,28 +96,38 @@
         color: #333;
     }
 
+    &:hover &__precio {
+        box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.887);
+        -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.887);
+        -moz-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.887);
+        z-index: 3;
+        border: none;
+    }
+
     &__precio {
         color: #333;
         text-align: center;
         padding: 0.3em;
-        margin-top: .5em;
-        box-shadow: 0px 0px 8px -2px black;
-        -webkit-box-shadow: 0px 0px 8px -2px black;
-        -moz-box-shadow: 0px 0px 8px -2px black;
+        margin-top: .8em;
+        border-top: #59BFF6 solid 1.5px;
+        border-bottom: #59BFF6 solid 1.5px;
+
     }
     &__precio > p:nth-child(3) {
         font-size: 10px;
+
     }
-    &__precio > p:nth-child(2) {
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Fascinate&display=swap');    &__precio > p:nth-child(2) {
+        font-family: 'Abril Fatface', cursive;
         font-size: 15px;
         font-weight: bold;
     }
     &__precio > p:nth-child(1) {
         font-size: 8px;
     }
-    &__precio:hover {
-        background-color: #f1f3f5;
-    }
+    // &__precio:hover {
+    //     background-color: #f1f3f5;
+    // }
 
     &__stock {
         display: flex;
@@ -102,19 +139,6 @@
         font-size: 10px;
     }
 
-    &__fav-megusta {
-        display: flex;
-        justify-content: space-evenly;
-        margin: .2em .5em 0em .5em;
-    }
-
-    &__boton-mas-menos {
-        display: flex;
-        justify-content: center;
-        margin: .5em .8em .5em .8em;
-        gap: .7em;
-        
-    }
 
     // @media (min-width: 1024px) {
     //     & {
@@ -144,4 +168,46 @@
     //         padding-left: 55%;
     //     }
     // }
+    &:nth-child(10n + 1) {
+        background-image: linear-gradient(to top, #b429f9, #26c5f3);
+    }
+
+    &:nth-child(10n + 2)  {
+        background-image: linear-gradient(to top, #af1239, #cce269);    
+    }
+
+    &:nth-child(10n + 3)  {
+        background-image: linear-gradient(to top, #0b3866, #3ddab2);    
+    }
+
+    &:nth-child(10n + 4)  {
+        background-image: linear-gradient(to top, #f40752, #7c65a9);
+    }
+
+    &:nth-child(10n + 5)  {
+        background-image: linear-gradient(to top, #1c3b41, #69d449);    
+    }
+
+    &:nth-child(10n + 6)  {
+        background-image: linear-gradient(to top, #0a5df8, #ed2d53);    
+    }
+
+    &:nth-child(10n + 7)  {
+        background-image: linear-gradient(to top, #661069, #30d26e);    
+    }
+
+    &:nth-child(10n + 8)  {
+        background-image: linear-gradient(to top, #702b19, #cec360);    
+    }
+
+    &:nth-child(10n + 9)  {
+        background-image: linear-gradient(to top, #034a66, #ced11a);    
+    }
+
+    &:nth-child(10n + 10)  {
+        background-image: linear-gradient(to top, #ec458d, #474ed7);    
+    }
+
+
+
 }

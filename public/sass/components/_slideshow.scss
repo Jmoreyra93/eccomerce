@@ -76,6 +76,13 @@ to {
 
 @media (min-width: 670px) {
     .slideshow-container {
+        height: 400px;
         min-width: 240px;
+    }
+    .slideshow-container img {
+        height: 400px;
+        min-width: 240px;
+        object-fit: fill;
+
     }
 }

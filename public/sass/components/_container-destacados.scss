@@ -1,42 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+// TODOS LOS CONTAINERS
 
-.container-destacados {
-    margin: 6em 4em;
-    height: 10em;
+.ofertas-containers {
     display: flex;
-    justify-content: space-around;
-    gap: 2em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
 
-    &__boton {
-        width: 25%;
-        // height: 180px;
-        color: #333;
-        font-size: 18px;
-        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-        // background-color: #59BFF6; 
-        // border-radius: 10px; 
-        border: solid #59BFF6 1px; 
-        cursor: pointer;
-        transition: background-color, 1s;
+
+
+
+
+.ofertas-countainer:hover {
+    // background-color: #01001a90;
+    // background-size: cover;
+}
+.ofertas-countainer:nth-child(1) {
+    background-image: url(../../img/productos-ofertas/apple-iphone-11-pro-max.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.ofertas-countainer:nth-child(2) {
+    background-image: url(../../img/productos-ofertas/sony-playstation-5.jpg);
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.ofertas-countainer:nth-child(3) {
+    background-image: url(../../img/productos-ofertas/drone-dji.jpg);
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.ofertas-countainer:nth-child(4) {
+    background-image: url(../../img/productos-ofertas/auriculares-sony.jpg);
+    background-size: cover;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+.ofertas h2 {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+
+// CADA CONTENEDOR
+.ofertas-countainer {
+    margin: 20px;
+    height: 280px;
+    text-align: center;
+    justify-content: center;
+    width: 290px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    font-family: 'Roboto', sans-serif;
+    clip-path: polygon(9% 0, 100% 0%, 91% 100%, 0% 100%);
+}
+.ofertas-countainer:hover {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+.ofertas {
+    height: 600px;
+
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%230b262b' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23164c57' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23207282' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%232b98ae' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%2336BED9' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+
+
+
+    // background-color: #330055;
+    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%23332a60' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23333c6a' cx='50' cy='100' r='50'/%3E%3Cg fill='%23334a73' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2334557b' cx='50' cy='200' r='50'/%3E%3Cg fill='%23345f83' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2334688b' cx='50' cy='300' r='50'/%3E%3Cg fill='%23347092' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23347898' cx='50' cy='400' r='50'/%3E%3Cg fill='%23347f9f' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%233586a5' cx='50' cy='500' r='50'/%3E%3Cg fill='%23358dab' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%233593b0' cx='50' cy='600' r='50'/%3E%3Cg fill='%233599b6' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23359fbb' cx='50' cy='700' r='50'/%3E%3Cg fill='%2335a5c1' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2335aac6' cx='50' cy='800' r='50'/%3E%3Cg fill='%2336afcb' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2336b4d0' cx='50' cy='900' r='50'/%3E%3Cg fill='%2336b9d4' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2336BED9' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    // background-attachment: fixed;
+    // background-size: contain;
+}
+.text-paralax {
+    transform: translateZ(30px);
+}
+.text-ofertas {
+    font-size: 3vh;
+    color: #1E2125;
+    box-sizing: border-box;
+}
+
+.text-paralax > p,h4 {
+    visibility: hidden;
+    padding-top: 1em;
+    text-align: center;
+}
+.text-paralax > h4 {
+    color: #fff;
+}
+.text-paralax > p {
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 2em 2em .5em 2em;
+}
+.ofertas-countainer:hover  p,h4 {
+    visibility: visible;
+}
+
+
+
+
+.ofertas-countainer:hover {
+    transition: .3s;
+    border-radius: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+
+
+
+
+
+
+.ofertas-countainer:nth-child(1):hover {
+    background-color: #36bed9;
+    z-index: 3;
+    transition: .5s;
+    color: #fe9141;
+    border-radius: 2px;
+    filter: none;
+
+}
+.ofertas-countainer:nth-child(2):hover {
+    transition: 1s;
+    color: #36bed9;
+    border-radius: 2px;
+    
+    filter: none;
+}
+.ofertas-countainer:nth-child(2):hover p {
+    transition: .5s;
+    color: #36bed9;
+    
+    filter: none;
+}
+
+.ofertas-countainer:nth-child(3):hover {
+    transition: .5s;
+    color: #F0DB4F;
+    border-radius: 2px;
+    filter: none;
+
+
+}
+.ofertas-countainer:nth-child(4):hover {
+    transition: .5s;
+    color: #8EC74E;
+    border-radius: 2px;
+    filter: none;
+
+}
+.ofertas-countainer:nth-child(5):hover {
+    transition: .5s;
+    color: #7D3E6A;
+    border-radius: 2px;
+    filter: none;
+
+}
+
+.ofertas-countainer img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 1% 100%);
+
+}
+.ofertas-countainer img:hover {
+    transition: 400ms all;
+    clip-path: polygon(0 0, 97% 0, 100% 100%, 4% 100%);
+    transform: scale(1.1) rotate(0deg);
+
+}
+
+// @media (max-width: 920px) {
+
+//     .ofertas-countainer img {
+//         width: 200px;
+//         height: 200px;
+//     }
+//     .ofertas-countainer {
+//         width: 50%;
+//         height: 200px;
+//     }
+//     .ofertas-containers {
+//         gap: 4em;
+//     }
+//     .ofertas {
+//         height: 1200px;
+//     }
+
+// }
+
+.ofertas-countainer > span {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.ofertas-countainer:nth-child(1) > span:nth-child(1) {
+    background-image: url(../../img/productos-ofertas/LabelOffer005HQ-01-PhotoRoom.png);
+}
+.ofertas-countainer:nth-child(2) > span:nth-child(1) {
+    background-image: url(../../img/productos-ofertas/LabelOffer005HQ-01-PhotoRoom2.png);
+    width: 90%;
+    height: 90%;
+    margin-top: 1.5em;
+}
+.ofertas-countainer:nth-child(3) > span:nth-child(1) {
+    background-image: url(../../img/productos-ofertas/LabelOffer005HQ-01-PhotoRoom3.png);
+    width: 90%;
+    height: 90%;
+    margin-top: 1.3em;
+    margin-left: 1.5em;
+}
+.ofertas-countainer:nth-child(4) > span:nth-child(1) {
+    background-image: url(../../img/productos-ofertas/LabelOffer005HQ-01-PhotoRoom.png);
+}
+
+
+
+
+
+.ofertas-countainer:hover > span {
+    visibility: inherit;
+    transition: all 4s;
+}
+
+
+@media (max-width: 960px) {
+    .ofertas-countainer:hover > span {
+        visibility: inherit;
+        transition: all 4s;
     }
 }
 
 
+@media (max-width: 1210px) {
+    .ofertas {
+        height: 800px;
+    }
+}
+
+@media (max-width: 820px) {
+    .ofertas {
+        height: 1200px;
+    }
+}
+
 @media (max-width: 620px) {
-    .container-destacados {
-        flex-direction: column;
-        align-items: center;
-        padding: 2em;
-        color: #333;
-        font-size: 18px;
-        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-        border: solid #59BFF6 1px;
-        cursor: pointer;
-        margin: 0;
-        height: unset;
+    .ofertas-containers {
+        // flex-direction: column;
+        // align-items: center;
+        // padding: 2em;
+        // color: #333;
+        // font-size: 18px;
+        // box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+        // border: solid #01001A 1px;
+        // cursor: pointer;
+        
+        flex-direction: row;
+        gap: 4em;
     }
-    .container-destacados__boton {
-        width: 210px;
-        height: 130px;
+    .ofertas {
+        height: 1800px;
     }
+    .text-paralax > p,h4 {
+        visibility: hidden;
+        padding-top: 1em;
+        text-align: center;
+    }
+    .text-paralax > h4 {
+        font-size: 10px
+    }
+    .text-paralax > p {
+        font-size: 12px;
+    }
+
+
 }

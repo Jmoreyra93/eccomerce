@@ -8,7 +8,7 @@
     background-image: #333;
     gap: 1em;
     transition: 0.7s;
-    background-color: #59BFF6;
+    background-color: #01001A;
     padding: 1em 0.5em;
 }
 
@@ -18,7 +18,13 @@ header.scrollfix {
     z-index: 3;
     transition: 0.7s ;
     width: 100%;
-    background-color: #fff;
+    background-color: #040326;
+    color: #3cb5f6;
+}
+header .scroll-fix{
+    display: none;
+    transition: 0.7s all;
+
 }
 
 #menu {
@@ -33,8 +39,8 @@ header.scrollfix {
 }
 
 #menu:checked ~ .search-bar .menu-toggle__label {
-    background-color: #59BFF6;
-    width: 70px;
+    background-color: #01001A;
+    width: 50px;
     font-size: 17px;
     color: #fff;
     transition: 0.7s;
@@ -85,12 +91,17 @@ header.scrollfix {
         padding: 0.8rem 2.5rem;
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.103);
         transition: all 0.4s linear;
-        border-radius: 6px;
+        border-radius: 3px;
         color: #fff;
         font-size: 16px;
         font-weight: bold; 
         font-family: 'Bangers', cursive;
         letter-spacing: 4px;
+
+        background-image: linear-gradient(to right, #01001A 50%, #00bdd8 50%);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        transition: background-position .3s ease;
     }
     
     &__nav-item {
@@ -99,8 +110,8 @@ header.scrollfix {
     }
     
     &__nav-link:hover {
-        background: #fff;  
-        color: #59BFF6; // el  Inicio no me cambia de color 
+        background-position: right;
+        color: #01001A; // el  Inicio no me cambia de color 
     }
     
     &__nav-link span {
@@ -148,9 +159,9 @@ header.scrollfix {
         color: #333;
         width: 111em;
         //background-color: aliceblue;
-        border-top: 2.5px solid #59BFF6;
-        border-left: 2.5px solid #59BFF6;
-        border-bottom: 2.5px solid #59BFF6;
+        border-top: 2.5px solid #01001A;
+        border-left: 2.5px solid #01001A;
+        border-bottom: 2.5px solid #01001A;
         border-right: 2.5px solid #fff;
         border-radius: 10px 0px 0px 10px;
         padding: 0 1em;
@@ -158,7 +169,7 @@ header.scrollfix {
 
     &__form-submit {
         margin-left: 2.5em;
-        background-color: #59BFF6;
+        background-color: #01001A;
         /* color: #edfafb;*/
         
         transition: all 0.4s linear;
@@ -211,10 +222,10 @@ header.scrollfix {
 
 .menu-toggle__label {
     display: block;
-    background-color: #3cb5f6;
+    background-color: #01001A;
     width: 70px;
     height: 100%;
-    border: #59bff6 solid 2.5px;
+    border: #01001A solid 2.5px;
 }
 
 .menu-toggle__pan-arriba,
@@ -346,7 +357,7 @@ header.scrollfix {
         display: none;
     }
     .nav-bar__nav-list a{
-        width: 27em;
+        width: 660px;
     }
 
     .nav-bar__nav-list {

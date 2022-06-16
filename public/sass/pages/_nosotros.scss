@@ -4,7 +4,6 @@
 }
 
 .nosotros {
-    margin-top: 4.5em;
 }
 
 .container-nosotros-somos {
@@ -36,7 +35,7 @@
 
 .container-nosotros-lider {
     height: 400px;
-    background: url(../../img/nosotros-imagenes/juegos.jpg) no-repeat center center fixed;
+    background: url(../../img/nosotros-imagenes/juegos.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,16 +56,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 280px;
-        font-size: 20px;
         text-align: center;
         padding: 1.5em 3em;
+        position: absolute;
+        margin-top: 5em;
+        color: #333;
+        line-height: 2em;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.103);
+        
     }
 }
 
 .container-nosotros-tecnologia {
-    height: 400px;
-    background: url(../../img/nosotros-imagenes/lider-en-tecnologia.jpg) no-repeat center center fixed;
+    height: 700px;
+    background: url(../../img/nosotros-imagenes/lider-en-tecnologia.jpg) no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -91,12 +94,14 @@
     }
 }
 .container-nosotros-garantia {
-    height: 400px;
-    background: url(../../img/nosotros-imagenes/garantia-img.jpg) no-repeat center center fixed;
+    height: 700px;
+    background: url(../../img/nosotros-imagenes/garantia-img.jpg) no-repeat center center local;
+    backface-visibility: tr;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0.3;
 
     &__titulo {
         color: #FFF;

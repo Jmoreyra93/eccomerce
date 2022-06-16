@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="icons/style.css">
     <link rel="stylesheet" href="icons-footer/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
 </head>
 <body>
     <header class="main-header">
@@ -41,7 +43,8 @@
             </ul>
         </nav>
 
-        <div class="search-bar">
+
+        <div class="search-bar scroll-fix">
             <form class="search-bar__form-container">
                 <input class="search-bar__form-search" id="busqueda" type="search"
                     placeholder="Buscar su producto aquí...">
@@ -63,16 +66,33 @@
     </header>
 
     
-    <!-- <section class="section-cart" id="section-cart"></section> -->
-
-
-    <div class="section-carrito"></div>
+    <div class="section-carrito">
+        <div class="wrapper" id="boton-cerrar" >
+            <a href="#" class="close-button">
+                <div class="in">
+                    <div class="close-button-block"></div>
+                    <div class="close-button-block"></div>
+                </div>
+                <div class="out">
+                    <div class="close-button-block"></div>
+                    <div class="close-button-block"></div>
+                </div>
+            </a>
+        </div>
+    </div>
     
     <main>
 
 
     </main>
-
+    
+    <div class="svg">
+        <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
+            <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#59BFF6" />
+            <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#333" />
+        </svg>
+    </div>
+    
     <footer class="footer-container">
         <section class="section-footer">
             <div class="footer-container__mas-de-nosotros">
@@ -153,6 +173,10 @@
 
     <!-- Código de arranque -->
     <script src="js/main.js"></script>
+
+    <!-- API GOOGLE MAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
 
 </body>
 </html>

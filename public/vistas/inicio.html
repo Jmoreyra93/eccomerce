@@ -1,3 +1,32 @@
+<div class="container-video">
+    <video src="../videos/video-index.mp4" width=320  height=240 muted autoplay poster="vistaprevia.jpg">
+        Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
+        La versión descargable está disponible en <a href="URL">Enlace</a>. 
+    </video>    
+</div>
+    
+
+
+
+<header class="header-cards">
+    <h1 class="cards-titulo">Productos</h1>
+</header>
+
+<div class="contenedor-mensaje" id="contenedorMensaje">
+
+    <div id="mensaje-producto-agregado" class="producto-agregado-borrado-actualizado"></div>
+
+</div>
+
+<section class="section-cards">
+
+    <header class="section-cards__header">
+        <p></p>
+    </header>
+    <br>
+    
+    <div class="cards-container"></div>
+</section>
 
 <div class="slideshow-container">
 
@@ -19,34 +48,6 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-<br>
-
-
-<!--
-<header class="header-cards">
-    <h1 class="cards-titulo">Productos</h1>
-</header>
-<section class="section-cards">
-    <div class="cards-container">
-
-
-    </div>
-</section> -->
-<header class="header-cards">
-    <h1 class="cards-titulo">Productos</h1>
-</header>
-<section class="section-cards">
-
-    <header class="section-cards__header">
-        <p></p>
-    </header>
-    <br>
-    
-    <div id="mensaje-producto-agregado"></div>
-    <div class="cards-container"></div>
-</section>
-
-
 
 
 
@@ -58,7 +59,7 @@
         <div class="container-medios__imagen">
             <img src="img/pago-envio/img-pago.png" alt="Elegi como pagar" class="container-medios__imagen">
         </div>
-        <h2>Elegí la forma de pagar</h2>
+        <h2>Elige la forma de pago</h2>
         <p>
             <span>
                 Podés pagar con tarjeta de crédito o débito hasta 12 cuotas sin interes.
@@ -90,6 +91,50 @@
         </p>
     </div>
 </section>
+
+<div class="ofertas">
+    <h2 class="cards-titulo">OFERTAS DEL DÍA</h2>
+    <div class="ofertas-containers">
+
+        <div class="ofertas-countainer" data-tilt data-tilt-glare
+            data-tilt-max-glare="0.2" data-tilt-scale="1.1">
+            <span></span>
+            <div class="text-paralax">
+                <h4 class="text-ofertas">I phone X </h4>
+            </div>
+        </div>
+        
+        <div class="ofertas-countainer" data-tilt data-tilt-glare
+            data-tilt-max-glare="0.2" data-tilt-scale="1.1">
+            <span></span>
+            <div class="text-paralax">
+                <h4 class="text-ofertas">Play Station 5</h4>
+            </div>
+        </div>
+
+        <div class="ofertas-countainer" data-tilt data-tilt-glare
+            data-tilt-max-glare="0.2" data-tilt-scale="1.1">
+            <span></span>
+            <div class="text-paralax">
+                <h4 class="text-ofertas">Drone DJI</h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="ofertas-countainer" data-tilt data-tilt-glare
+            data-tilt-max-glare="0.2" data-tilt-scale="1.1">
+            <span></span>
+            <div class="text-paralax">
+                <h4 class="text-ofertas">Auriculares Sony</h4>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
 
 <!-- Slideshow Marcas -->
 
@@ -142,4 +187,26 @@
     <button class="container-destacados__boton" id=""><span class="container-destacados__texto">Solicitar turno post venta 📲</span></button>
     <button class="container-destacados__boton" id=""><span class="container-destacados__texto">Trabaja con nosotros 🔧</span></button>
 </div> -->
+
+<div class="contenedor-suscripcion">
+    <article>
+        <h1>Registrate para recibir descuentos y más</h1>
+        <button id="btn-abrir-popup" class="btn-abrir-popup" onclick="ventanaSuscripcion()">Suscribite</button>
+    </article>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe un cupon de descuento.</h4>
+            <form action="">
+                <div class="contenedor-suscripcion-inputs">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+        </div>
+    </div>
+</div>
 

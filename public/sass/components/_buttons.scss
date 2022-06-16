@@ -34,20 +34,21 @@ button {
     border: solid #e1e4e5 1px;
     padding: 1.2em;
     cursor: pointer;
+    color: #fff;
 
 
 }
 
 #boton-buscar {
-    border-top: 2.5px solid #59BFF6;
-    border-right: 2.5px solid #59BFF6;
-    border-bottom: 2.5px solid #59BFF6;
+    border-top: 2.5px solid #01001A;
+    border-right: 2.5px solid #01001A;
+    border-bottom: 2.5px solid #01001A;
     border-left: 2.5px solid #fff;
     background-color: #fff;
     border-radius: 0px 10px 10px 0px;
     font-size: 15px;
 
-    color: #59BFF6;
+    color: #01001A;
 
 }
 
@@ -56,7 +57,7 @@ button {
 }
 
 #boton-carrito {
-    background-color: #59BFF6;
+    background-color: #01001A;
     width: 60px;
     font-size: 15px;
     color: #fff;
@@ -80,12 +81,12 @@ button {
 
 }
 #boton-fav:hover {
-    background-color: #59BFF6;
+    background-color: #01001A;
     color: #fff;
     border: none;
 }
 
-#boton-mas , #boton-menos , #boton-carr {
+#boton-mas , #boton-menos {
     color: #fff;
     width: 40px;
     height: 40px;
@@ -93,16 +94,37 @@ button {
     font-weight: bolder;
     
 }
+#boton-carr {
+    color: rgb(191, 191, 191);
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#boton-carr:hover {
+    color: #e1e4e5;
+    background-color: #59BFF6;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    
+}
 #boton-mas:hover , #boton-menos:hover{
     background-color: #F66F58;
     
 }
-#boton-carr:hover {
-    background-color: yellowgreen;
-}
+
 
 button:hover {
     background-color: #F66F58;
     color: #e1e4e5;
     border: #F66F58;
 }
+

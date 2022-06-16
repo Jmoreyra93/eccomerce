@@ -7,24 +7,43 @@
 // }
 
 .producto-agregado-borrado-actualizado {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 20em;
-    margin: 0 auto;
-    border: solid 2px #33aad2;
+    margin: 500px;
     padding: 2em 2em;
+    height: 200px;
 
-    border-radius: 21px;
-    background: linear-gradient(145deg, #2a8cae, #32a7cf);
-    box-shadow:  5px 5px 10px #2d94b7,
-                -5px -5px 10px #31a4cb;   
+    border-radius: 6px;
+	background: #fff;
+    box-shadow:  5px 5px 10px #000000,
+                -5px -5px 10px #181818;
     color: #f1f2f3;
+    font-size: large;
+    font-weight: bold;
     z-index: 3;
-    left: 543px;
-    top: 595px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
     position: fixed;
     transition: 10s box-shadow;
+    text-align: center;
+    color: #01001A;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.103);
+}
+.contenedor-mensaje {
+    background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	visibility: hidden;
+    z-index: 3;
 }
 
 .container-alta {
@@ -38,12 +57,10 @@
     &__handlebars {
         table, th, td {
             background-color: #f5f5f5;
-            border: 2.3px solid #fe9143;
-            border-radius: 5px;
             border-collapse: collapse;
             color: #333;
             padding: 5px;
-            height: 80px;
+            height: 60px;
             text-align: center;
         }
         td:nth-last-child(1n) {
@@ -53,6 +70,7 @@
         td:nth-last-child(3n) {
             width: 150px;
         }
+
         th {
             //font-size: 18px;
         }
@@ -72,21 +90,19 @@
         }   
         table, th, td {
             background-color: #f5f5f5;
-            border: 2.3px solid #59BFF6;//#fe9143;
-            border-radius: 5px;
+            border: 2.3px solid #01001A;//#fe9143;
             border-collapse: collapse;
 
-            padding: 5px;
             
             color: #333;
             font-weight: bold;
             //font-size: 20px;
         }
         th {
-            font-size: 24px;
+            font-size: 16px;
             color: #f5f5f5;
             background-color: #333;
-            border: 1.2px solid #59BFF6;//#fe9143;
+            border: 1.2px solid #01001A;//#fe9143;
             margin-bottom: 2em;
 
         }
@@ -103,7 +119,33 @@
             width: 120px;
             display: block;
             margin: 0 auto;
+            height: 100px;
         }
+    }
+
+    #drop-area {
+        border: 2px dashed #ccc;
+        border-radius: 20px;
+        width: 300px;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    #foto {
+        display: none;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px;
+        background: #ccc;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+
+    #drop-area.highlight {
+        border: 3px dashed purple;
+
     }
 }
 
@@ -111,7 +153,7 @@
 .formulario {
         color: #333;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 16px;
         //padding: 20px 0 50px 0;
         //max-width: 950px;
         background-color: #f5f5f5;
@@ -120,20 +162,32 @@
         margin: 0 auto;
         text-align: left;
 
+
+        div.msg-validation {
+            border-radius: 2px;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 420px;
+            color: rgb(215, 89, 16);
+            background-color: #fff;
+            display: none;
+            text-align: center;
+            font-size: 18px;
+        }
+
+
         label {
             text-align: left;
             display: block;
-            margin: 15px 0px 15px 0px;
+            margin: 15px 0px 4px 0px;
             
         }
 
         &__boton-actualizar {
-            width: 100px;
+            width: 100%;
             height: 50px;
-            background-color: #59BFF6;
-            border-radius: 10px;
-            border: solid #e1e4e5 1px;
-            padding: 1.2em;
+            background-color: #01001A;
             cursor: pointer;
             font-weight: bold;
             color: #f5f5f5;
@@ -141,16 +195,12 @@
         
 
         &__boton-borrar {
-            margin-top: .5em;
+            width: 100%;
             height: 50px;
-            width: 100px;
             background-color: #333;
-            border-radius: 10px;
-            border: solid #e1e4e5 1px;
-            padding: 1.2em;
             cursor: pointer;
             font-weight: bold;
-            color: aliceblue;
+            color: #f5f5f5;
         }
         
         
@@ -159,46 +209,7 @@
         &__datos-personales {
             margin-bottom: 3.5em;
         }
-        
-        &__fieldset {
-            text-align: left;
-            border: none;
-            text-align: left;
-            display: block;
-            font-size: 18px;
-        }
 
-        &__campo-obligatorio {
-            border: 3px solid red;
-            border-radius: 5px;
-            justify-content: center;
-            align-items: center;
-            align-self: center;
-            width: 420px;
-            color: red;
-            background-color: #fff;
-            display: none;
-            text-align: center;
-            font-size: 18px;
-        }
-
-
-        &__legend {
-            padding: 5px;
-            //border: 2px solid rgba(51, 51, 51, 0.774);
-            background-color: #333;
-            color: #f5f5f5;
-            text-align: center;
-            padding-top: 20px;
-            font-size: 24px;
-            height: 80px;
-            width: 420px;
-            
-        border: 2.3px solid #59BFF6;//#fe9143;
-        border-radius: 5px;
-        border-collapse: collapse;
-
-        }
 
         &__email {
             text-align: left;
@@ -224,12 +235,13 @@
                 margin: 0px 0px 0px 0px;
                 //padding: 15px 10px 15px 10px;
                 width: 420px;
-                height: 3.5em;
+                height: 2.5em;
                 border-radius: 5px;
                 background-color: rgba(240, 248, 255, 0.52);
             }
             &__input-nombre:focus {
-                background-color: #59BFF6;
+                background-color: #31a4cb;
+                color: #01001A;
             }
 
             &__nombre-alta {
@@ -244,7 +256,8 @@
                     background-color: rgba(240, 248, 255, 0.52);
                 }
                 &__input-nombre-alta:focus {
-                    background-color: #59BFF6;
+                    background-color: #31a4cb;
+                    color: #01001A;
                 }
             
         &__precio {
@@ -259,7 +272,7 @@
                 background-color: rgba(240, 248, 255, 0.52);
             }
             &__input-precio:focus {
-                background-color: #59BFF6;
+                background-color: #01001A;
             }
             &__marca {
                 text-align: left;
@@ -274,7 +287,7 @@
                 
             }
             &__marca-select:focus {
-                background-color: #59BFF6;
+                background-color: #01001A;
             }
             &__foto {
                 display: block;
@@ -301,7 +314,7 @@
                 background-color: rgba(240, 248, 255, 0.52);
             }
             &__categoria-select:focus {
-                background-color: #59BFF6;
+                background-color: #01001A;
             }
             &__detalle {
                 display: block;
@@ -322,7 +335,7 @@
                 background-color: rgba(240, 248, 255, 0.52);
             }
             &__detalle-textarea:focus {
-                background-color: #59BFF6;
+                background-color: #01001A;
             }
         &__stock {
             text-align: center;
@@ -444,8 +457,16 @@
 @media (max-width: 1434px) {
     .container-alta {
         flex-direction: column;
-        margin: 0 .5em;
+        margin: 0 auto;
     }
+    .formulario {
+        align-self: center;
+    }
+    
+    .container-alta__handlebars{
+        margin: 20px;
+    }
+    
 }
     
 @media (max-width: 1100px) {
@@ -460,6 +481,7 @@
 @media (max-width: 900px) {
     .container-alta__handlebars  table {
         width: 500px;
+        margin: 0 auto;
     }
 }
 @media (max-width: 500px) {

@@ -1,10 +1,13 @@
 import express from 'express'
+
 import routerProductos from './router/productos.js'
 import routerCarrito from './router/carrito.js'
-import config from './config.js'
+import routerUpload from './router/upload.js'
 
-//import ProductoModelMongoDB from './model/productos-mongodb.js'
-//ProductoModelMongoDB.conectarDB()
+import config from './config.js'
+import Mongo_DB from './model/DB_mongo.js'
+
+Mongo_DB.conectarDB()
 
 const app = express()
 
@@ -14,6 +17,7 @@ app.use(express.json())
 
 app.use('/api/productos', routerProductos)
 app.use('/api/carrito', routerCarrito)
+app.use('/upload', routerUpload)
 
 
 // ------- Server Listen --------
