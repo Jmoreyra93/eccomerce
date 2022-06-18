@@ -1,7 +1,11 @@
-async function renderPlantillaListado(listado) {
 
+
+
+async function renderPlantillaListado(listado) {
+    
     let plantillaHbs = await fetch('plantillas/inicio.hbs').then(r => r.text())
     var template = Handlebars.compile(plantillaHbs);
+    
     // execute the compiled template and print the output to the console
     //let html = template({ productos: productos, validos: !algunCampoNoValido() })
     let html = template({ listado })
@@ -37,7 +41,7 @@ async function initInicio() {
     
     var productos = await productoController.obtenerProductos()
     await renderPlantillaListado(productos)
-
+    
     document.querySelector('.section-cards__header p').innerHTML = `Se encontraron ${productos.length} productos`
     
 }
@@ -69,16 +73,5 @@ function ventanaSuscripcion() {
         popup.classList.remove('active');
     });
 }
-
-// function ventanaSuscripcion() {
-//     var overlay = document.getElementById('overlayAyuda')
-//     var imgAyuda = document.getElementById('imgAyuda')
-    
-    
-//     imgAyuda.addEventListener('click', function(){
-//         overlay.classList.add('active');
-//     });
-// }
-
 
 

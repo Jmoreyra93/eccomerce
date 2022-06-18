@@ -10,6 +10,8 @@
     z-index: 1;
     box-shadow: .5em .5em 1em rgba(0, 0, 0, .3);
     display: none;
+    box-sizing: border-box;
+    overflow-x: auto;
 
     &--open {
         display: grid;
@@ -57,9 +59,8 @@
 }
 
 $button-size: 40px;
-$close-width: (
-    $button-size / 10
-);
+// $close-width: ( $button-size / 10 );
+$close-width: 4px;
 
 .wrapper {
     width: 4vw;
@@ -159,5 +160,17 @@ $close-width: (
                 }
             }
         }
+    }
+}
+
+@media (max-width: 900px) {
+    .section-carrito   {
+        box-sizing: border-box;
+        overflow-x: auto;
+
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
     }
 }

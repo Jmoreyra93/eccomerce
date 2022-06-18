@@ -1,59 +1,93 @@
-
 <header class="header-cards">
     <h1 class="cards-titulo" id="titulo-alta">Contacta con nosotros</h1>
 </header>
 
-    <div class="formulario__contacto">
+<div class="formulario__contacto">
+
+</div>
+<div class="overlayAyuda" id="overlayAyuda">
+    <div class="imagen-ayuda">
+
+        <img id="imgAyuda" src="../img/suscribite.png" alt="">
 
     </div>
-    <div class="overlayAyuda" id="overlayAyuda">
-        <div class="imagen-ayuda">
-            
-            <img id="imgAyuda"  src="../img/suscribite.png" alt="">
+</div>
+<div class="container_contacto">
+    <div class="contact_form">
 
-            </div>
-    </div>
-    <div class="container_contacto">
+        <div class="formulario">
+            <h1>Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
 
-        <form action="formulario.php" class="formulario" id="formulario-contacto" method="POST">
-            <!-- FORMULARIO DE CONTACO -->
-            <div class="formulario___contacto">
-                <fieldset class="formulario__fieldset">
-                    <legend class="formulario__legend">Datos de contacto <span class=""></span></legend>
-    
-                    <div class="formulario__nombre-alta">
-                        <label for="nombre">Nombre:<sup>*</sup></label>
-                        <input id="nombre" class="formulario__input-nombre-alta" name="nom" required autofocus>
-                    </div>
-                    
-                    <div class="formulario__email">    
-                        <label for="email">Dirección de correo electrónico:<sup>*</sup></label>
-                        <input type="email" id="email" class="formulario__email-input" name="e-mail" required placeholder="Ej: mail@gmail.com">
-                    </div>    
-                    <div class="formulario__detalle">
-                        <label for="contanos-detalle" class="formulario__detalle-label">Contanos...</label>
-                        <textarea id="contanos-detalle" name="detail" class="formulario__detalle-textarea"></textarea>
-                    </div>
-                    
-        
-                </fieldset>
-            </div>
-            
-            <div class="formulario-novedades">
-                <input type="checkbox" id="acepto-novedades" name="acep-nov" value="si" checked>
-                <label for="acepto-novedades">Deseo recibir novedades</label>
-            </div>  
-    
-            <p class="campo-obligatorio"><sup>*</sup>:campo obligatorio.</p>
-            
-            <div class="formulario__botones">
-                <input type="submit" value="Enviar" class="formulario__botones-submit">
-                <input type="reset" value="Restablecer" class="formulario__botones-reset">
-            </div>
-        </form>      
-        <div class="iframe">
-            <h3> Donde encontrarnos</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6558.388029826735!2d-58.259509240068!3d-34.725503654614656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651117232932!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="formulario_contacto_inframe"></iframe>        </iframe>
+
+            <form action="submeter-formulario.php" method="post">
+
+
+                <p>
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+
+                <p>
+                    <label for="telefone" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+
+
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
+
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>
+
+            </form>
         </div>
-        <div id="map"></div>
     </div>
+
+
+
+    <div class="iframe">
+        <h3> Donde encontrarnos</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6558.388029826735!2d-58.259509240068!3d-34.725503654614656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e38e45f5777%3A0x6a86dac21334524f!2sQuilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1651117232932!5m2!1ses!2sar"
+            width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="formulario_contacto_inframe">
+        </iframe>
+        <div class="contacto-video">
+            <video src="../videos/contacto.mp4" muted autoplay width="600" height="600">
+
+            </video>    
+        </div>
+    </div>
+
+</div>

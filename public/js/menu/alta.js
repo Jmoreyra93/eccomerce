@@ -15,7 +15,6 @@ class FormularioAlta {
     /* -------------  drag and drop  -----------------*/
     dropArea = null
     progressBar = null
-    uploadProgress = 0
     imagenSubida = ''
     /* ---------------------------------------------- */
 
@@ -132,6 +131,13 @@ class FormularioAlta {
     
         this.button.disabled = true
         this.camposValidos = [false,false,false,false,false,false]
+        
+        let img = document.querySelector('#gallery img')
+        img.src = ''
+
+        this.initializeProgress()
+
+        this.imagenSubida = ''
     }
 
     /* -------------  drag and drop  -----------------*/

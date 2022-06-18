@@ -45,8 +45,8 @@
                     <p>Subir imágen al servidor con <b>file dialog</b> ó con <b>Drag and Drop</b> dentro del área punteada</p>
                     <br>
         
-                    <input id="foto" type="file" accept="image/*">
-                    <label class="button" for="foto">file dialog</label>
+                    <input id="foto" type="file" accept="image/*" onchange="formularioAlta.handleFiles(this.files)">
+                    <label class="button" for="foto">Sube una foto</label>
                     <br><br>
         
                     <progress id="progress-bar" max="100" value="0"></progress>
