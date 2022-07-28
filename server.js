@@ -20,7 +20,14 @@ app.use('/api/carrito', routerCarrito)
 app.use('/upload', routerUpload)
 
 
+console.log('-----------------------------------------')
+console.log('process.env.PORT:', process.env.PORT)
+console.log('process.env.TIPO:', process.env.TIPO)
+console.log('process.env.CNX:', process.env.CNX)
+console.log('-----------------------------------------')
+
+
 // ------- Server Listen --------
-const PORT = process.env.PORT || config.PORT
+const PORT = config.PORT
 const server = app.listen(PORT, () => console.log(`Servidor express escuchando en el puerto ${PORT}`))
 server.on('error', error => console.log(`Error en servidor express: ${error.message}`))
